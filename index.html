@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maize Shield – Diagnose, Prevent & Treat Maize Pests/Diseases</title>
+  <meta name="description" content="Maize Shield helps smallholder farmers in Kenya to self-diagnose maize pests and diseases and receive prevention & treatment guidance in real time." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Tailwind Play CDN (simple and fast for prototypes) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --brand: #1B5E20; --brand-2: #8BC34A; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif; }
+    .brand-gradient { background: linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 100%); }
+    .container { max-width: 1100px; }
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.7); }
+    .shadow-soft { box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Top Bar / Nav -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-gray-200">
+    <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl brand-gradient text-white font-black">MS</span>
+        <div class="leading-tight">
+          <div class="font-extrabold text-lg">Maize Shield</div>
+          <div class="text-xs text-gray-500">Diagnose • Prevent • Treat</div>
+        </div>
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#how" class="hover:text-green-700">How it works</a>
+        <a href="#features" class="hover:text-green-700">Features</a>
+        <a href="#resources" class="hover:text-green-700">Resources</a>
+        <a href="#download" class="hover:text-green-700">Download</a>
+        <a href="#faq" class="hover:text-green-700">FAQ</a>
+        <a href="#contact" class="hover:text-green-700">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <button id="langToggle" class="px-3 py-2 rounded-lg border text-sm hover:bg-gray-100" aria-label="Toggle language">EN / SW</button>
+        <a href="#download" class="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-white brand-gradient shadow-soft">
+          <!-- Download Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16l4-5h-3V4h-2v7H8l4 5zm-7 2h14v2H5v-2z"/></svg>
+          <span class="lang lang-en">Get the App</span>
+          <span class="lang lang-sw hidden">Pakua App</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="brand-gradient">
+      <div class="container mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-black text-white leading-[1.1]">
+            <span class="lang lang-en">Healthy maize, stronger harvests.</span>
+            <span class="lang lang-sw hidden">Mahindi yenye afya, mavuno bora.</span>
+          </h1>
+          <p class="mt-4 text-white/90 text-lg md:text-xl">
+            <span class="lang lang-en">Maize Shield helps smallholder farmers in Kenya to <b>self‑diagnose</b> maize pests & diseases and get <b>real‑time</b> prevention and treatment guidance.</span>
+            <span class="lang lang-sw hidden">Maize Shield inasaidia wakulima wadogo nchini Kenya <b>kutambua</b> magonjwa na visumbufu vya mahindi na kupata <b>mwongozo wa haraka</b> wa kinga na tiba.</span>
+          </p>
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <a href="#download" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-white bg-black/30 hover:bg-black/40">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16l4-5h-3V4h-2v7H8l4 5z"/></svg>
+              <span class="lang lang-en">Download for Android</span>
+              <span class="lang lang-sw hidden">Pakua kwa Android</span>
+            </a>
+            <a href="#contact" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white text-green-800 hover:bg-green-50 border border-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M2 3h20v14H6l-4 4V3z"/></svg>
+              <span class="lang lang-en">Ask for help</span>
+              <span class="lang lang-sw hidden">Omba msaada</span>
+            </a>
+          </div>
+          <p class="mt-4 text-white/90 text-sm">Pilot focus: Kenya • Works offline after install • Built for low‑end phones</p>
+        </div>
+        <div class="relative">
+          <div class="absolute -inset-6 rounded-3xl bg-white/10 blur-2xl"></div>
+          <div class="relative bg-white rounded-3xl p-4 md:p-6 shadow-soft">
+            <div class="aspect-[9/19] w-full rounded-2xl bg-gray-100 border overflow-hidden grid place-items-center text-center p-6">
+              <div>
+                <div class="mx-auto mb-4 h-12 w-12 rounded-full brand-gradient text-white grid place-items-center font-black">MS</div>
+                <h3 class="font-bold text-lg">Maize Shield (App preview)</h3>
+                <p class="text-sm text-gray-600">Scan a leaf → Get diagnosis → Receive treatment steps</p>
+                <div class="mt-4 text-xs text-gray-500">Image classifier • Offline tips • Local language • Low data</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl font-extrabold">How it works</h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl p-6 shadow-soft border">
+        <div class="h-10 w-10 rounded-lg bg-green-100 text-green-800 grid place-items-center mb-3">
+          <!-- camera icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20 5h-3.17l-1.84-2H9.01L7.17 5H4a2 2 0 00-2 2v11a2 2 0 002 2h16a2 2 0 002-2V7a2 2 0 00-2-2zm-8 13a5 5 0 110-10 5 5 0 010 10z"/></svg>
+        </div>
+        <h3 class="font-bold">1) Scan a leaf</h3>
+        <p class="text-sm text-gray-600">Open the app and capture a photo of the maize plant or leaf.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-soft border">
+        <div class="h-10 w-10 rounded-lg bg-green-100 text-green-800 grid place-items-center mb-3">
+          <!-- spark icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M11 21l-1-4-4-1 4-1 1-4 1 4 4 1-4 1-1 4zM5 8l-1-3-3-1 3-1 1-3 1 3 3 1-3 1-1 3zm14 6l-1-2-2-1 2-1 1-2 1 2 2 1-2 1-1 2z"/></svg>
+        </div>
+        <h3 class="font-bold">2) Get diagnosis</h3>
+        <p class="text-sm text-gray-600">The app suggests likely pest/disease and confidence level.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-soft border">
+        <div class="h-10 w-10 rounded-lg bg-green-100 text-green-800 grid place-items-center mb-3">
+          <!-- checklist icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h10v2H3v-2zm14.59-3.59L20 15l-6 6-3.5-3.5L11.91 16 14 18.09 17.59 13.41z"/></svg>
+        </div>
+        <h3 class="font-bold">3) Act instantly</h3>
+        <p class="text-sm text-gray-600">Receive localized prevention & treatment steps, even offline.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="bg-white border-y">
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl font-extrabold">Why farmers choose Maize Shield</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl p-6 border shadow-soft">
+          <h3 class="font-bold">Works Offline</h3>
+          <p class="text-sm text-gray-600">Core guidance available without internet after first install.</p>
+        </div>
+        <div class="rounded-2xl p-6 border shadow-soft">
+          <h3 class="font-bold">Local Languages</h3>
+          <p class="text-sm text-gray-600">English & Kiswahili content designed for clarity.</p>
+        </div>
+        <div class="rounded-2xl p-6 border shadow-soft">
+          <h3 class="font-bold">Low Data & Low-End Phones</h3>
+          <p class="text-sm text-gray-600">Optimized images, small app size, battery friendly.</p>
+        </div>
+        <div class="rounded-2xl p-6 border shadow-soft">
+          <h3 class="font-bold">Real-time Guidance</h3>
+          <p class="text-sm text-gray-600">Clear steps to prevent spread & reduce yield loss.</p>
+        </div>
+        <div class="rounded-2xl p-6 border shadow-soft">
+          <h3 class="font-bold">Community & Support</h3>
+          <p class="text-sm text-gray-600">Ask agronomists or peers via WhatsApp integration.</p>
+        </div>
+        <div class="rounded-2xl p-6 border shadow-soft">
+          <h3 class="font-bold">Open to Partners</h3>
+          <p class="text-sm text-gray-600">Built with researchers, NGOs, & county officers in mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources / Knowledge Hub -->
+  <section id="resources" class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl font-extrabold">Pest & Disease Guides</h2>
+    <p class="text-gray-600 mt-2">Quick guides for common issues. Add more anytime by duplicating a card.</p>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <!-- Card 1: Fall Armyworm -->
+      <article class="rounded-2xl border bg-white shadow-soft overflow-hidden">
+        <div class="h-36 bg-[url('https://images.unsplash.com/photo-1520694699231-5a2b24b36117?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-lg">Fall Armyworm (Spodoptera frugiperda)</h3>
+          <p class="text-sm text-gray-600 mt-1">Windowing on leaves, frass in whorl, ragged defoliation.</p>
+          <details class="mt-3">
+            <summary class="cursor-pointer text-sm font-semibold text-green-800">Prevention & Treatment</summary>
+            <div class="mt-2 text-sm text-gray-700 space-y-2">
+              <p><b>Scouting:</b> Inspect 20–30 plants per field weekly; look for larvae & frass in whorl.</p>
+              <p><b>Non-chemical:</b> Hand-pick larvae; apply ash/soil-sand mix in whorl; encourage natural enemies.</p>
+              <p><b>Chemical (as last resort):</b> Use recommended active ingredients per local extension advice; rotate modes of action.</p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Card 2: Maize Lethal Necrosis (MLN) -->
+      <article class="rounded-2xl border bg-white shadow-soft overflow-hidden">
+        <div class="h-36 bg-[url('https://images.unsplash.com/photo-1536485101711-48bcbe3d5a38?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-lg">Maize Lethal Necrosis (MLN)</h3>
+          <p class="text-sm text-gray-600 mt-1">Chlorotic mottling, leaf necrosis, poor ear fill; spread by vectors.</p>
+          <details class="mt-3">
+            <summary class="cursor-pointer text-sm font-semibold text-green-800">Prevention & Management</summary>
+            <div class="mt-2 text-sm text-gray-700 space-y-2">
+              <p><b>Seed & Hygiene:</b> Use certified seed; rogue & destroy infected plants.</p>
+              <p><b>Vector control:</b> Manage thrips/aphids early; avoid overlapping crops.</p>
+              <p><b>Resistant varieties:</b> Where available, plant tolerant hybrids; rotate crops.</p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Card 3: Maize Streak Virus (MSV) -->
+      <article class="rounded-2xl border bg-white shadow-soft overflow-hidden">
+        <div class="h-36 bg-[url('https://images.unsplash.com/photo-1500930512468-60d0cbbe24c1?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-lg">Maize Streak Virus (MSV)</h3>
+          <p class="text-sm text-gray-600 mt-1">Fine yellow streaks on leaves; stunting; spread by leafhoppers.</p>
+          <details class="mt-3">
+            <summary class="cursor-pointer text-sm font-semibold text-green-800">Prevention & Management</summary>
+            <div class="mt-2 text-sm text-gray-700 space-y-2">
+              <p><b>Planting time:</b> Plant early with rains to escape high vector pressure.</p>
+              <p><b>Varieties:</b> Use tolerant/resistant varieties if available; remove volunteer maize.</p>
+              <p><b>Field hygiene:</b> Control grasses & weeds that host vectors.</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-6 text-sm text-gray-500">Tip: To add a new guide, copy one <code>&lt;article&gt;…&lt;/article&gt;</code> block above and change the title, description and details.</div>
+  </section>
+
+  <!-- Download -->
+  <section id="download" class="bg-white border-y">
+    <div class="container mx-auto px-4 py-14 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl font-extrabold">Download Maize Shield</h2>
+        <p class="text-gray-600 mt-2">When the Play Store link is live, replace the buttons below. For now, they can link to your APK or waitlist form.</p>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a href="#" class="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-black text-white">
+            <!-- Play badge simplified -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M3 2l18 10L3 22V2z"/></svg>
+            <span>Get it on Android</span>
+          </a>
+          <a href="#" class="inline-flex items-center gap-3 px-5 py-3 rounded-xl border">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 2a7 7 0 017 7c0 3.9-3.134 9-7 9s-7-5.1-7-9a7 7 0 017-7z"/></svg>
+            <span>Join WhatsApp Community</span>
+          </a>
+        </div>
+      </div>
+      <div class="bg-gray-50 border rounded-2xl p-6">
+        <h3 class="font-bold">Scan to get the app</h3>
+        <p class="text-sm text-gray-600">Replace this placeholder QR with your actual link later.</p>
+        <!-- Simple SVG QR placeholder -->
+        <div class="mt-4 grid place-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" class="w-48 h-48">
+            <rect width="120" height="120" fill="#eee"/>
+            <rect x="10" y="10" width="30" height="30" fill="#111"/>
+            <rect x="80" y="10" width="30" height="30" fill="#111"/>
+            <rect x="10" y="80" width="30" height="30" fill="#111"/>
+            <rect x="35" y="35" width="10" height="10" fill="#111"/>
+            <rect x="55" y="55" width="10" height="10" fill="#111"/>
+            <rect x="75" y="75" width="10" height="10" fill="#111"/>
+            <rect x="95" y="95" width="10" height="10" fill="#111"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners / Impact -->
+  <section class="container mx-auto px-4 py-14">
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <div>
+        <h2 class="text-3xl font-extrabold">For Partners & Counties</h2>
+        <p class="text-gray-600 mt-2">We collaborate with researchers, NGOs, and county extension officers to scale impact and share anonymized insights.</p>
+        <ul class="mt-4 space-y-2 text-sm text-gray-700 list-disc list-inside">
+          <li>Field pilots & demos with farmer groups</li>
+          <li>Localized content & advisory updates</li>
+          <li>Optional dashboards for outbreak trends</li>
+        </ul>
+        <a href="#contact" class="inline-flex mt-5 px-5 py-3 rounded-xl border hover:bg-gray-50">Start a partnership</a>
+      </div>
+      <div class="bg-white border rounded-2xl p-6 shadow-soft">
+        <h3 class="font-bold">Live Alerts (Preview)</h3>
+        <p class="text-sm text-gray-600">This is a placeholder map card. Later, embed a real map or chart from your backend.</p>
+        <div class="mt-4 h-56 rounded-xl bg-[linear-gradient(45deg,#e5e7eb,#f3f4f6)] grid place-items-center text-gray-500">Outbreak Map Placeholder</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-white border-y">
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl font-extrabold">Frequently Asked Questions</h2>
+      <div class="mt-6 space-y-4">
+        <details class="group border rounded-xl p-4">
+          <summary class="font-semibold cursor-pointer">Does Maize Shield work offline?</summary>
+          <p class="mt-2 text-sm text-gray-700">Yes. After first install, core guides are available offline. Some features (e.g., updates) need internet.</p>
+        </details>
+        <details class="group border rounded-xl p-4">
+          <summary class="font-semibold cursor-pointer">Is it free?</summary>
+          <p class="mt-2 text-sm text-gray-700">The app is free for smallholder farmers during pilot. Partner features may require agreements.</p>
+        </details>
+        <details class="group border rounded-xl p-4">
+          <summary class="font-semibold cursor-pointer">Which phones are supported?</summary>
+          <p class="mt-2 text-sm text-gray-700">Android 7.0 (Nougat) and above. iOS support is planned.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Netlify Forms compatible -->
+  <section id="contact" class="container mx-auto px-4 py-14">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-3xl font-extrabold">Contact & Feedback</h2>
+        <p class="text-gray-600 mt-2">Questions, bugs, or partnership ideas? Send us a message.</p>
+        <div class="mt-4 text-sm text-gray-700">
+          <p><b>Email:</b> <span class="text-gray-500">hello@maizeshield.org</span> (replace with your email)</p>
+          <p><b>WhatsApp:</b> <span class="text-gray-500">+254 7xx xxx xxx</span> (replace with your number or group link)</p>
+        </div>
+      </div>
+      <form name="contact" method="POST" data-netlify="true" class="bg-white border rounded-2xl p-6 shadow-soft">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="grid gap-4">
+          <label class="text-sm">Full Name
+            <input name="name" required class="mt-1 w-full rounded-lg border px-3 py-2" placeholder="Jane Doe" />
+          </label>
+          <label class="text-sm">Phone (optional)
+            <input name="phone" class="mt-1 w-full rounded-lg border px-3 py-2" placeholder="07xx xxx xxx" />
+          </label>
+          <label class="text-sm">County / Location
+            <input name="location" class="mt-1 w-full rounded-lg border px-3 py-2" placeholder="Nakuru" />
+          </label>
+          <label class="text-sm">Message
+            <textarea name="message" required rows="4" class="mt-1 w-full rounded-lg border px-3 py-2" placeholder="How can we help?" ></textarea>
+          </label>
+          <button class="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-white brand-gradient">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
+            Send Message
+          </button>
+          <p class="text-xs text-gray-500">This form works automatically on Netlify (no extra setup).</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-white border-t">
+    <div class="container mx-auto px-4 py-8 text-sm text-gray-600 flex flex-wrap items-center justify-between gap-4">
+      <p>© <span id="year"></span> Maize Shield. All rights reserved.</p>
+      <div class="flex items-center gap-3">
+        <a href="#" class="hover:text-gray-900">Privacy</a>
+        <a href="#" class="hover:text-gray-900">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple language toggle (English/Kiswahili)
+    const toggle = document.getElementById('langToggle');
+    let sw = false;
+    toggle?.addEventListener('click', () => {
+      sw = !sw;
+      document.querySelectorAll('.lang-en').forEach(el => el.classList.toggle('hidden', sw));
+      document.querySelectorAll('.lang-sw').forEach(el => el.classList.toggle('hidden', !sw));
+    });
+  </script>
+</body>
+</html>
